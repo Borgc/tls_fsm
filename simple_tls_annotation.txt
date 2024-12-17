@@ -1,0 +1,29 @@
+   
+STATES:
+0 START
+1 RECV_CH
+2 NEGOTIATED
+3 WAIT_EOED
+4 WAIT_FLIGHT2
+5 WAIT_CERT
+6 WAIT_CV
+7 WAIT_FINISHED
+8 CONNECTED
+INPUTS:
+0 r:ClientHello 
+1 s:HelloRetryRequest
+2 s:ServerHello
+3 r:Handshake
+4 r:EarlyData
+5 r:EarlyData
+6 r:EndOfEarlyData
+7 r:NoAuth
+8 r:ClientAuth
+9 r:Certificate
+10 r:CertificateVerify
+11 r:Finished
+12 r:EmptyCertificate
+OUTPUTS:
+0 EmptyOutput (NoMsgForClient)
+1 HelloRetryRequest
+2 ServerHello
