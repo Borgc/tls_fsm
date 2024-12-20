@@ -10,19 +10,19 @@ STATES:
 7 WAIT_FINISHED
 8 CONNECTED
 INPUTS:
-0 r:ClientHello 
-1 s:HelloRetryRequest
-2 s:ServerHello
-3 r:Handshake
-4 r:EarlyData
-5 r:EarlyData
-6 r:EndOfEarlyData
-7 r:NoAuth
-8 r:ClientAuth
-9 r:Certificate
-10 r:CertificateVerify
-11 r:Finished
-12 r:EmptyCertificate
+0 r:ClientHello + (modify it to gain another inputs)
+1 s:HelloRetryRequest (send bad ClienHello to gain HRR)
+2 s:ServerHello + (send good ClientHello to gain SH)
+3 r:Handshake + (ChangeCipherSpec?)
+4 r:EarlyData + just execute with right config and FULL_ZERO_RTT input workflow
+5 r:EarlyData + THE SAME AS 4
+6 r:EndOfEarlyData + THE SAME AS 4
+7 r:NoAuth NO CERT SPECIFIED
+8 r:ClientAuth CERT SPECIFIED
+9 r:Certificate SAME AS 8
+10 r:CertificateVerify SAME AS 8
+11 r:Finished + RIGHT ANOTHER INPUTS
+12 r:EmptyCertificate EXECUTE WITH EMPTY CERT?
 OUTPUTS:
 0 EmptyOutput (NoMsgForClient)
 1 HelloRetryRequest
