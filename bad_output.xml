@@ -1,0 +1,214 @@
+<workflowTrace>
+    <OutboundConnection>
+        <alias>client</alias>
+        <ip>127.0.0.1</ip>
+        <ipv6>0:0:0:0:0:0:0:1</ipv6>
+        <port>4433</port>
+        <hostname>localhost</hostname>
+        <timeout>1000</timeout>
+        <connectionTimeout>8000</connectionTimeout>
+        <transportHandlerType>TCP</transportHandlerType>
+        <useIpv6>false</useIpv6>
+    </OutboundConnection>
+    <Send>
+        <executed>true</executed>
+        <connectionAlias>client</connectionAlias>
+        <result/>
+        <configuredMessages>
+            <ClientHello>
+                <completeResultingMessage>
+                    <originalValue>01 00 00 7E 03 03 60 B4 20 BB 38 51 D9 D4 7A CB 93 3D BE 70 39 9B F6 C9 2D A3 3A F0 1D 4F B7 70 E9 8C 03 25 F4 1D 00 00 04 13 01 13 02 01 00 00 51 00 0A 00 04 00 02 00 1D 00 0D 00 14 00 12 04 01 05 01 06 01 04 03 05 03 06 03 08 04 08 05 08 06 00 2B 00 03 02 03 04 00 33 00 26 00 24 00 1D 00 20 B1 E8 23 6B 63 1E 19 D8 6B 28 A6 FF 4D 5F 4B 39 D4 1E DD F4 7A B7 D3 A9 57 95 06 DE C3 DA 27 2A</originalValue>
+                </completeResultingMessage>
+                <type>
+                    <originalValue>1</originalValue>
+                </type>
+                <length>
+                    <originalValue>126</originalValue>
+                </length>
+                <messageContent>
+                    <originalValue>03 03 60 B4 20 BB 38 51 D9 D4 7A CB 93 3D BE 70 39 9B F6 C9 2D A3 3A F0 1D 4F B7 70 E9 8C 03 25 F4 1D 00 00 04 13 01 13 02 01 00 00 51 00 0A 00 04 00 02 00 1D 00 0D 00 14 00 12 04 01 05 01 06 01 04 03 05 03 06 03 08 04 08 05 08 06 00 2B 00 03 02 03 04 00 33 00 26 00 24 00 1D 00 20 B1 E8 23 6B 63 1E 19 D8 6B 28 A6 FF 4D 5F 4B 39 D4 1E DD F4 7A B7 D3 A9 57 95 06 DE C3 DA 27 2A</originalValue>
+                </messageContent>
+                <extensions>
+                    <EllipticCurves>
+                        <extensionBytes>
+                            <originalValue>00 0A 00 04 00 02 00 1D</originalValue>
+                        </extensionBytes>
+                        <extensionContent>
+                            <originalValue>00 02 00 1D</originalValue>
+                        </extensionContent>
+                        <extensionLength>
+                            <originalValue>4</originalValue>
+                        </extensionLength>
+                        <extensionType>
+                            <originalValue>00 0A</originalValue>
+                        </extensionType>
+                        <supportedGroups>
+                            <originalValue>00 1D</originalValue>
+                        </supportedGroups>
+                        <supportedGroupsLength>
+                            <originalValue>2</originalValue>
+                        </supportedGroupsLength>
+                    </EllipticCurves>
+                    <SignatureAndHashAlgorithmsExtension>
+                        <extensionBytes>
+                            <originalValue>00 0D 00 14 00 12 04 01 05 01 06 01 04 03 05 03 06 03 08 04 08 05 08 06</originalValue>
+                        </extensionBytes>
+                        <extensionContent>
+                            <originalValue>00 12 04 01 05 01 06 01 04 03 05 03 06 03 08 04 08 05 08 06</originalValue>
+                        </extensionContent>
+                        <extensionLength>
+                            <originalValue>20</originalValue>
+                        </extensionLength>
+                        <extensionType>
+                            <originalValue>00 0D</originalValue>
+                        </extensionType>
+                        <signatureAndHashAlgorithms>
+                            <originalValue>04 01 05 01 06 01 04 03 05 03 06 03 08 04 08 05 08 06</originalValue>
+                        </signatureAndHashAlgorithms>
+                        <signatureAndHashAlgorithmsLength>
+                            <originalValue>18</originalValue>
+                        </signatureAndHashAlgorithmsLength>
+                    </SignatureAndHashAlgorithmsExtension>
+                    <SupportedVersions>
+                        <extensionBytes>
+                            <originalValue>00 2B 00 03 02 03 04</originalValue>
+                        </extensionBytes>
+                        <extensionContent>
+                            <originalValue>02 03 04</originalValue>
+                        </extensionContent>
+                        <extensionLength>
+                            <originalValue>3</originalValue>
+                        </extensionLength>
+                        <extensionType>
+                            <originalValue>00 2B</originalValue>
+                        </extensionType>
+                        <supportedVersions>
+                            <originalValue>03 04</originalValue>
+                        </supportedVersions>
+                        <supportedVersionsLength>
+                            <originalValue>2</originalValue>
+                        </supportedVersionsLength>
+                    </SupportedVersions>
+                    <KeyShareExtension>
+                        <extensionBytes>
+                            <ByteArrayExplicitValueModification>
+                                <explicitValue>00 33 00 26 00 24 00 1D 00 20 B1 E8 23 6B 63 1E 19 D8 6B 28 A6 FF 4D 5F 4B 39 D4 1E DD F4 7A B7 D3 A9 57 95 06 DE C3 DA 27 2A</explicitValue>
+                            </ByteArrayExplicitValueModification>
+                            <originalValue>00 33 00 02 00 00</originalValue>
+                        </extensionBytes>
+                        <extensionContent>
+                            <originalValue>00 00</originalValue>
+                        </extensionContent>
+                        <extensionLength>
+                            <originalValue>2</originalValue>
+                        </extensionLength>
+                        <extensionType>
+                            <originalValue>00 33</originalValue>
+                        </extensionType>
+                        <keyShareListLength>
+                            <originalValue>0</originalValue>
+                        </keyShareListLength>
+                        <keyShareListBytes>
+                            <originalValue/>
+                        </keyShareListBytes>
+                    </KeyShareExtension>
+                </extensions>
+                <extensionBytes>
+                    <originalValue>00 0A 00 04 00 02 00 1D 00 0D 00 14 00 12 04 01 05 01 06 01 04 03 05 03 06 03 08 04 08 05 08 06 00 2B 00 03 02 03 04 00 33 00 26 00 24 00 1D 00 20 B1 E8 23 6B 63 1E 19 D8 6B 28 A6 FF 4D 5F 4B 39 D4 1E DD F4 7A B7 D3 A9 57 95 06 DE C3 DA 27 2A</originalValue>
+                </extensionBytes>
+                <extensionsLength>
+                    <originalValue>81</originalValue>
+                </extensionsLength>
+                <protocolVersion>
+                    <originalValue>03 03</originalValue>
+                </protocolVersion>
+                <random>
+                    <originalValue>60 B4 20 BB 38 51 D9 D4 7A CB 93 3D BE 70 39 9B F6 C9 2D A3 3A F0 1D 4F B7 70 E9 8C 03 25 F4 1D</originalValue>
+                </random>
+                <sessionIdLength>
+                    <originalValue>0</originalValue>
+                </sessionIdLength>
+                <sessionId>
+                    <originalValue/>
+                </sessionId>
+                <compressionLength>
+                    <originalValue>1</originalValue>
+                </compressionLength>
+                <cipherSuiteLength>
+                    <originalValue>4</originalValue>
+                </cipherSuiteLength>
+                <cipherSuites>
+                    <originalValue>13 01 13 02</originalValue>
+                </cipherSuites>
+                <compressions>
+                    <originalValue>00</originalValue>
+                </compressions>
+            </ClientHello>
+        </configuredMessages>
+    </Send>
+    <ReceiveTill>
+        <executed>true</executed>
+        <connectionAlias>client</connectionAlias>
+        <result/>
+        <ServerHelloDone/>
+    </ReceiveTill>
+    <SendDynamicClientKeyExchange>
+        <executed>true</executed>
+        <connectionAlias>client</connectionAlias>
+        <result/>
+    </SendDynamicClientKeyExchange>
+    <Send>
+        <executed>true</executed>
+        <connectionAlias>client</connectionAlias>
+        <result/>
+        <configuredMessages>
+            <ChangeCipherSpec>
+                <completeResultingMessage>
+                    <originalValue>01</originalValue>
+                </completeResultingMessage>
+                <ccsProtocolType>
+                    <originalValue>01</originalValue>
+                </ccsProtocolType>
+            </ChangeCipherSpec>
+            <Finished>
+                <completeResultingMessage>
+                    <originalValue>14 00 00 20 8C 5D 68 33 F8 B2 B3 42 4C 54 45 13 0F A1 95 26 CC 46 5C 33 39 51 82 0E 25 4A 45 E1 75 34 D1 86</originalValue>
+                </completeResultingMessage>
+                <type>
+                    <originalValue>20</originalValue>
+                </type>
+                <length>
+                    <originalValue>32</originalValue>
+                </length>
+                <messageContent>
+                    <originalValue>8C 5D 68 33 F8 B2 B3 42 4C 54 45 13 0F A1 95 26 CC 46 5C 33 39 51 82 0E 25 4A 45 E1 75 34 D1 86</originalValue>
+                </messageContent>
+                <verifyData>
+                    <originalValue>8C 5D 68 33 F8 B2 B3 42 4C 54 45 13 0F A1 95 26 CC 46 5C 33 39 51 82 0E 25 4A 45 E1 75 34 D1 86</originalValue>
+                </verifyData>
+            </Finished>
+        </configuredMessages>
+    </Send>
+    <ReceiveTill>
+        <executed>true</executed>
+        <connectionAlias>client</connectionAlias>
+        <result/>
+        <Finished/>
+    </ReceiveTill>
+    <Send>
+        <executed>true</executed>
+        <connectionAlias>client</connectionAlias>
+        <result/>
+        <configuredMessages>
+            <Application>
+                <completeResultingMessage>
+                    <originalValue>0A 0A 54 68 69 73 20 69 73 20 61 20 6D 65 73 73 61 67 65 20 66 72 6F 6D 20 54 4C 53 2D 41 74 74 61 63 6B 65 72 0A 0A</originalValue>
+                </completeResultingMessage>
+                <dataConfig>0A 0A 54 68 69 73 20 69 73 20 61 20 6D 65 73 73 61 67 65 20 66 72 6F 6D 20 54 4C 53 2D 41 74 74 61 63 6B 65 72 0A 0A</dataConfig>
+                <data>
+                    <originalValue>0A 0A 54 68 69 73 20 69 73 20 61 20 6D 65 73 73 61 67 65 20 66 72 6F 6D 20 54 4C 53 2D 41 74 74 61 63 6B 65 72 0A 0A</originalValue>
+                </data>
+            </Application>
+        </configuredMessages>
+    </Send>
+</workflowTrace>

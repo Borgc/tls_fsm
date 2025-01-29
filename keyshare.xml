@@ -1,0 +1,13 @@
+<EllipticCurves/>
+                <SignatureAndHashAlgorithmsExtension/>
+                <SupportedVersions/>
+                <KeyShareExtension>
+                        <keyShareListLength>1</keyShareListLength> <!-- Number of key shares -->
+                        <keyShareListBytes>01020304</keyShareListBytes> <!-- Example byte array -->
+                        <keyShareList>
+                            <keyShareEntry>
+                                <group>X25519</group> <!-- Example group name -->
+                            </keyShareEntry>
+                        </keyShareList>
+                        <retryRequestMode>false</retryRequestMode> <!-- Example boolean value -->
+                    </KeyShareExtension>

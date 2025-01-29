@@ -1,0 +1,42 @@
+<workflowTrace>
+    <Send>
+        <configuredMessages>
+            <ClientHello>
+            <extensions>
+                  <EllipticCurves/>
+                    <SignatureAndHashAlgorithmsExtension/>
+                    <SupportedVersions/>
+                    <KeyShareExtension>
+                        <extensionBytes>
+                                <ByteArrayExplicitValueModification>
+                                    <explicitValue>DEADBEEF00 33 00 26 00 24 00 1D 00 20 B1 E8 23 6B 63 1E 19 D8 6B 28 A6 FF 4D 5F 4B 39 D4 1E DD F4 7A B7 D3 A9 57 95 06 DE C3 DA 27 2A</explicitValue>
+                                </ByteArrayExplicitValueModification>
+                        </extensionBytes>
+                    </KeyShareExtension>
+            </extensions>
+            </ClientHello>
+        </configuredMessages>
+    </Send>
+    <ReceiveTill>
+        <ServerHelloDone/>
+    </ReceiveTill>
+    <SendDynamicClientKeyExchange/>
+    <Send>
+        <configuredMessages>
+            
+            <ChangeCipherSpec/>
+            <Finished/>
+        </configuredMessages>
+    </Send>
+    <ReceiveTill>
+        <Finished/>
+    </ReceiveTill>
+    <Send>
+        <configuredMessages>
+            <Application>
+                <dataConfig>0A0A546869732069732061206D6573736167652066726F6D20544C532D41747461636B65720A0A</dataConfig>
+            </Application>
+        </configuredMessages>
+    </Send>
+</workflowTrace>
+

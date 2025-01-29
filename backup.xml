@@ -1,0 +1,36 @@
+<workflowTrace>
+    <Send>
+        <configuredMessages>
+            <ClientHello>
+            <extensions>
+                <ECPointFormat/>
+                <EllipticCurves/>
+                <SignatureAndHashAlgorithmsExtension/>
+                <RenegotiationInfoExtension/>
+                <ExtendedMasterSecretExtension/>
+                <EncryptThenMacExtension/>
+            </extensions>
+            </ClientHello>
+        </configuredMessages>
+    </Send>
+    <ReceiveTill>
+        <ServerHelloDone/>
+    </ReceiveTill>
+    <SendDynamicClientKeyExchange/>
+    <Send>
+        <configuredMessages>
+            <ChangeCipherSpec/>
+            <Finished/>
+        </configuredMessages>
+    </Send>
+    <ReceiveTill>
+        <Finished/>
+    </ReceiveTill>
+    <Send>
+        <configuredMessages>
+            <Application>
+                <dataConfig>0A0A546869732069732061206D6573736167652066726F6D20544C532D41747461636B65720A0A</dataConfig>
+            </Application>
+        </configuredMessages>
+    </Send>
+</workflowTrace>
