@@ -116,10 +116,8 @@ if __name__ == "__main__":
     ED_input = [server_cmd_default, EarlyData, 602]
     Fin_input = [server_cmd_default, Finished, 214]
     
-    random_input = [CH_input, HRR_input, cert_input, ED_input, Fin_input]
+    input = [CH_input, HRR_input, cert_input, ED_input, Fin_input]
     
-    automata_input = [CH_input, CH_input, HRR_input, HRR_input, cert_input, CH_input, HRR_input, ED_input, cert_input, ED_input, Fin_input, 
-                     HRR_input, Fin_input, HRR_input, CH_input, cert_input, ED_input, Fin_input]
     test_len = 0
     automata_found = False
     fuzzing_found = False
