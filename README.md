@@ -1,10 +1,12 @@
 # TLS_FSM
 
-Configs, workflows and testing scripts for TLS automata-like testing
+Configs, workflows and testing scripts for TLS 1.3 automata-like testing
 
 ## Used in project
-https://github.com/tls-attacker/TLS-Attacker - Java-based framework for analyzing TLS libraries.\n
+https://github.com/tls-attacker/TLS-Attacker - Java-based framework for analyzing TLS libraries.
+
 https://github.com/nlohmann/mutate_cpp - A C++ Mutation Test Environment.
+
 https://github.com/openssl/openssl - OpenSSL is a robust, commercial-grade, full-featured Open Source Toolkit for the TLS (formerly SSL) protocols.
 
 ### Description
